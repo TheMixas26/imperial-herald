@@ -3,8 +3,17 @@ languageCode = "ru-ru"
 title = "Имперский Вестник"
 theme = "PaperMod"
 
+[pagination]
+  pagerSize = 10
+
 [params]
   ShowReadingTime = true
   defaultTheme = "auto"
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  ShowShareButtons = true
+  hideFooter = false
+
+  [params.homeInfoParams]
+    Title = "Имперский Вестник 🦉"
+    Content = "Официальное и лицензионное СМИ Империи. Всё самое важное — в одном месте. И без ереси."
