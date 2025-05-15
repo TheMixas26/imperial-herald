@@ -1,0 +1,10 @@
+baseURL = "/"
+languageCode = "ru-ru"
+title = "Имперский Вестник"
+theme = "PaperMod"
+
+[params]
+  ShowReadingTime = true
+  defaultTheme = "auto"
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
