@@ -33,3 +33,8 @@ identifier = "projects"
 name = "Проекты"
 url = "/projects/"
 weight = 2
+
+[outputs]
+home = [ "HTML", "RSS" ]
+section = [ "HTML", "RSS" ]
+taxonomy = [ "HTML", "RSS" ]

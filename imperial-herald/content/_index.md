@@ -51,6 +51,8 @@ title = "Имперский Вестник 🦉"
 
 ### 🔗 Важные ссылки
 
-📰 [Официальный телеграм канал "Вестника"](https://t.me/reolo_channel)
-📘 [Произведение "Имперские Хроники"](https://docs.google.com/document/d/1zHX1EPBbiBE9jDVRyT6r0SMeZpKZhszVUwn2v7qx45c/edit?usp=sharing)
-ℹ️ [Имперская ВИКИ (wip)](https://reolo.fandom.com/ru/wiki/Imperial_%D0%92%D0%B8%D0%BA%D0%B8)
+- 📰 [Официальный телеграм канал "Вестника"](https://t.me/reolo_channel)
+
+- 📘 [Произведение "Имперские Хроники"](https://docs.google.com/document/d/1zHX1EPBbiBE9jDVRyT6r0SMeZpKZhszVUwn2v7qx45c/edit?usp=sharing)
+
+- ℹ️ [Имперская ВИКИ (wip)](https://reolo.fandom.com/ru/wiki/Imperial_%D0%92%D0%B8%D0%BA%D0%B8)
