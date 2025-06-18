@@ -19,11 +19,17 @@ theme = "PaperMod"
 [[menu.main]]
 identifier = "vypuski"
 name = "Выпуски"
-url = "/posts/"
+url = "/00-posts/"
 weight = 1
 
 [[menu.main]]
 identifier = "svodki"
 name = "Военные Сводки"
 url = "/military-reports/"
+weight = 3
+
+[[menu.main]]
+identifier = "projects"
+name = "Проекты"
+url = "/projects/"
 weight = 2
