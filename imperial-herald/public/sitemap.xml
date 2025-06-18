@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/military-reports/</loc>
-    <lastmod>2025-06-18T14:14:27+03:00</lastmod>
-  </url><url>
     <loc>/</loc>
+    <lastmod>2025-06-18T20:29:35+03:00</lastmod>
+  </url><url>
+    <loc>/military-reports/</loc>
     <lastmod>2025-06-18T14:14:27+03:00</lastmod>
   </url><url>
     <loc>/posts/</loc>

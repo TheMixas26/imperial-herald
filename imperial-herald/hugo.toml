@@ -13,6 +13,8 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowShareButtons = false
   hideFooter = false
+  ShowRecentPosts = false
+
 
 [[menu.main]]
 identifier = "vypuski"
