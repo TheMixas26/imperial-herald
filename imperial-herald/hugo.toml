@@ -17,3 +17,15 @@ theme = "PaperMod"
 [params.homeInfoParams]
   Title = "Имперский Вестник 🦉"
   Content = "Официальное и лицензионное СМИ Империи. Всё самое важное — в одном месте. И без ереси."
+
+[[menu.main]]
+identifier = "vypuski"
+name = "Выпуски"
+url = "/posts/"
+weight = 1
+
+[[menu.main]]
+identifier = "svodki"
+name = "Военные Сводки"
+url = "/military-reports/"
+weight = 2
