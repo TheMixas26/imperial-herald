@@ -13,25 +13,6 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowShareButtons = false
   hideFooter = false
-  ShowRecentPosts = false
-
-[params.homeInfoParams]
-  Title = "Имперский Вестник 🦉"
-
-  Content = """
-Официальное и лицензионное СМИ Империи. Всё самое важное — в одном месте. И без ереси.
-
- 
- 
-
-👉 [Выпуски газеты](/posts/)
-
- 
- 
-
-👉 [Военные Сводки](/military-reports/)
-"""
-
 
 [[menu.main]]
 identifier = "vypuski"
