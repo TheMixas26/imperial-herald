@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Имперские Архивы on Имперский Вестник</title>
+    <link>//localhost:1313/archives/</link>
+    <description>Recent content in Имперские Архивы on Имперский Вестник</description>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/archives/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project &#34;Find the Abyss&#34;</title>
+      <link>//localhost:1313/archives/project-find-the-abyss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/archives/project-find-the-abyss/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Засекречено. Уровень допуска: Омега&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Архивное управление Империи&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Документ № YL-84/Find the Abyss&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Дата составления: &lt;em&gt;Засекречено&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;Автор: &lt;em&gt;Засекречено&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;оперативный-отчёт-о-проекте&#34;&gt;&lt;strong&gt;Оперативный отчёт о проекте &amp;ldquo;Find the Abyss&amp;rdquo;&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;i-предназначение&#34;&gt;&lt;strong&gt;I. Предназначение&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Проект &lt;strong&gt;&amp;ldquo;Find the Abyss&amp;rdquo;&lt;/strong&gt; предназначен для &lt;strong&gt;поиска и исследования Бездны&lt;/strong&gt; – гипотетического пространства, которое, согласно древним источникам и магическим записям, представляет собой &lt;strong&gt;неконтролируемую вселенную&lt;/strong&gt;, скрытую от посторонних глаз и существующую в параллельности с Пустотой. Вход в это пространство спрятан в одном из миров, и &lt;strong&gt;доступ к нему ограничен&lt;/strong&gt;. Цель проекта – &lt;strong&gt;найти и исследовать это пространство&lt;/strong&gt;, а также определить его влияние на существующие законы реальности.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Об Архивах</title>
+      <link>//localhost:1313/archives/about-archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/archives/about-archives/</guid>
+      <description>&lt;h1 id=&#34;про-структуру-архивов&#34;&gt;&lt;strong&gt;ПРО СТРУКТУРУ АРХИВОВ&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;РЕГЛАМЕНТ КЛАССИФИКАЦИИ АРХИВНЫХ ДОКУМЕНТОВ&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1-общие-положения&#34;&gt;&lt;strong&gt;1. ОБЩИЕ ПОЛОЖЕНИЯ&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Настоящий документ регламентирует классификацию архивных материалов и уровни доступа к ним в рамках Имперских Архивов.&lt;/p&gt;
+&lt;p&gt;Архивные документы подразделяются по уровням допуска, определяющим круг лиц, имеющих право на ознакомление с соответствующими материалами.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-уровни-допуска&#34;&gt;&lt;strong&gt;2. УРОВНИ ДОПУСКА&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;21-общедоступный-уровень&#34;&gt;&lt;strong&gt;2.1. ОБЩЕДОСТУПНЫЙ УРОВЕНЬ&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;0. Всеобщий&lt;/strong&gt; – информация открытого типа, доступная каждому гражданину Империи.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;22-заслужные-уровни-допуска&#34;&gt;&lt;strong&gt;2.2. ЗАСЛУЖНЫЕ УРОВНИ ДОПУСКА&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Выдаются лицам, пожертвовавшим личные архивные записи и документы для пополнения фонда Имперских Архивов.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

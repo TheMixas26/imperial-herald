@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Высший Совет Империи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <style>
+    body {
+      background: #0a0a14;
+      color: #e0e0ff;
+      font-family: 'Georgia', serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .swiper {
+      width: 80%;
+      height: 600px;
+    }
+
+    .swiper-slide {
+      background: rgba(50, 50, 80, 0.8);
+      border: 2px solid #6a00b9;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(100, 0, 200, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .council-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 35%;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .mana-bar {
+      width: 80%;
+      background: #222;
+      border: 1px solid #999;
+      margin: 10px auto;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .mana-fill-mody {
+      background: linear-gradient(90deg, #6a00b9, #8b00ff, #d580ff);
+      height: 100%;
+    }
+    .mana-fill-fel {
+      background: linear-gradient(90deg, #00b91f, #00ff15, #80ff91);
+      height: 100%;
+    }
+    .mana-fill-gen {
+      background: linear-gradient(90deg, #0003b9, #2600ff, #8880ff);
+      height: 100%;
+    }
+    .mana-fill-shkar {
+      background: linear-gradient(90deg, #b98e00, #ffbb00, #ffe180);
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🦉 Высший Совет Империи</h1>
+<p>Листайте, чтобы узнать больше о каждом члены Совета.</p>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <!-- Советник 1 -->
+    <div class="swiper-slide">
+      <img class="council-img" src="/images/council/Amoderny.jpg" alt="Амодерни">
+      <h2>Амодерни Боровски</h2>
+      <div class="mana-bar"><div class="mana-fill-mody" style="width: 95%;"></div></div>
+      <p><i>"Величие Империи не измеряется числом башен, а глубиной воли."</i></p>
+      <p>Один из древнейших магов Империи. Создатель портальных систем. Мана: почти неисчерпаема, но запечатана.</p>
+    </div>
+
+    <!-- Советник 2 -->
+    <div class="swiper-slide">
+      <img class="council-img" src="/images/council/Felonia.jpg" alt="Фелония">
+      <h2>Фелония Ламберт</h2>
+      <div class="mana-bar"><div class="mana-fill-fel" style="width: 80%;"></div></div>
+      <p><i>"Истинная магия — в понимании мира."</i></p>
+      <p>Специалист по зелёной магии и астральным потокам. Автор работ о биомагии.</p>
+    </div>
+
+    <!-- Советник 3 -->
+    <div class="swiper-slide">
+      <img class="council-img" src="/images/council/Genrich.jpg" alt="гена">
+      <h2>Генрих Многорукий</h2>
+      <div class="mana-bar"><div class="mana-fill-gen" style="width: 70%;"></div></div>
+      <p><i>"Сила Империи — в её знании."</i></p>
+      <p>Ведущий архитектор Столицы. Мастер пространственной инженерии.</p>
+    </div>
+
+    <!-- Советник 4 -->
+    <div class="swiper-slide">
+      <img class="council-img" src="/images/council/ishar.png" alt="Шкару">
+      <h2>Шкаручела <i>Фамилия</i></h2>
+      <div class="mana-bar"><div class="mana-fill-shkar" style="width: 70%;"></div></div>
+      <p><i>"Цитата"</i></p>
+      <p>вклад? ебейший!!!</p>
+    </div>
+
+    <!-- Советник 5 -->
+    <div class="swiper-slide">
+      <img class="council-img" src="/images/council/ishar.png" alt="фанд">
+      <h2>Фандр Джи</h2>
+      <div class="mana-bar"><div class="mana-fill" style="width: 70%;"></div></div>
+      <p><i>"Цитата"</i></p>
+      <p>машина клянусь</p>
+    </div>
+    
+  </div>
+
+  <!-- Кнопки навигации -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <!-- Пагинация -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  var swiper = new Swiper('.swiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    loop: true,
+    spaceBetween: 30
+  });
+</script>
+
+</body>
+</html>
