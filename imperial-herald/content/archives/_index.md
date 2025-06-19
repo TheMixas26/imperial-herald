@@ -1,8 +1,8 @@
 +++
-date = '2025-06-18T20:29:35+03:00'
-draft = false
 title = 'Имперские Архивы'
 ShowRecentPosts = true
+ShowPostNavLinks = true
+layout = "single"
 +++
 
 ### Новости!
@@ -10,3 +10,4 @@ ShowRecentPosts = true
 
 ---
 
+📄 [Project "Find the Abyss"](project-Find-the-Abyss)

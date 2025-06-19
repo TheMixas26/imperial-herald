@@ -16,8 +16,6 @@ theme = "PaperMod"
   ShowRecentPosts = false
   EmergencyNotice = "ВНИМАНИЕ! Тестируется бегущая полоса! Это важная часть будущего Имеприи!"
 
-
-
 [[menu.main]]
 identifier = "vypuski"
 name = "Выпуски"

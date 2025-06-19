@@ -1,6 +1,5 @@
 +++
 title = 'Project "Find the Abyss"'
-draft = false
 +++
 
 **Засекречено. Уровень допуска: Омега**  

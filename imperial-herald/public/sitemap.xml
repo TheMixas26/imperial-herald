@@ -11,9 +11,6 @@
     <loc>//localhost:1313/projects-sus/</loc>
     <lastmod>2025-06-18T21:36:31+03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/archives/</loc>
-    <lastmod>2025-06-18T20:29:35+03:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2025-06-18T20:29:35+03:00</lastmod>
   </url><url>
@@ -70,10 +67,14 @@
   </url><url>
     <loc>//localhost:1313/persons/council/</loc>
   </url><url>
+    <loc>//localhost:1313/archives/</loc>
+  </url><url>
     <loc>//localhost:1313/persons/</loc>
   </url><url>
     <loc>//localhost:1313/map/</loc>
   </url><url>
     <loc>//localhost:1313/archives/about-archives/</loc>
+  </url><url>
+    <loc>//localhost:1313/persons/editors/editors/</loc>
   </url>
 </urlset>
