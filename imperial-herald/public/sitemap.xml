@@ -7,6 +7,9 @@
     <loc>//localhost:1313/persons/impg/generals/</loc>
   </url><url>
     <loc>//localhost:1313/00-posts/</loc>
+    <lastmod>2025-07-07T08:00:00+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/00-posts/21/</loc>
     <lastmod>2025-07-06T08:00:00+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/00-posts/20/</loc>
@@ -25,9 +28,6 @@
     <lastmod>2025-06-18T20:29:35+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/military-reports-sus/</loc>
-    <lastmod>2025-06-18T14:14:27+03:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/military-reports-sus/vvo-day-27/</loc>
     <lastmod>2025-06-18T14:14:27+03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/00-posts/18/</loc>
