@@ -45,3 +45,8 @@ weight = 4
 home = [ "HTML", "RSS" ]
 section = [ "HTML", "RSS" ]
 taxonomy = [ "HTML", "RSS" ]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
