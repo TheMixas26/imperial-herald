@@ -92,36 +92,6 @@
 &lt;p&gt;Он поставляется в &lt;strong&gt;маленьких стеклянных колбочках объёмом 10–15 грамм&lt;/strong&gt;, с плотной пробкой и эмблемой «падающего перста». Внутри — &lt;strong&gt;сияющий порошок, искрящийся зелёным&lt;/strong&gt;, будто перемолотая зависть, злость и боль.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Выпуск №24 - Подкаст!</title>
-      <link>//localhost:1313/00-posts/24/</link>
-      <pubDate>Mon, 14 Jul 2025 23:00:00 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/24/</guid>
-      <description>&lt;p&gt;Подкаст в сегодняшем выпуске!&lt;/p&gt;
-&lt;div style=&#34;
-  background: #1e102d;
-  border: 2px solid #6c2eb9;
-  border-radius: 16px;
-  padding: 1rem;
-  max-width: 600px;
-  margin: 2rem auto;
-  box-shadow: 0 0 20px rgba(108, 46, 185, 0.5);
-  font-family: &#39;Segoe UI&#39;, sans-serif;
-  color: #e0d3ff;
-&#34;&gt;
-  &lt;div style=&#34;font-size: 1.25rem; margin-bottom: 0.5rem;&#34;&gt;
-    🎙️ &lt;strong&gt;Имперский Подкаст&lt;/strong&gt;&lt;br&gt;
-    &lt;span style=&#34;font-size: 0.9rem; color: #bca7ff;&#34;&gt;Выпуск 1: &#34;ХОЛОДНАЯ СТАЛЬ: ВЗГЛЯД В ВЕРАНУ&#34;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;audio controls style=&#34;width: 100%; border-radius: 8px;&#34;&gt;
-    &lt;source src=&#34;//localhost:1313/episodes/episode1.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-    Ваш браузер не поддерживает аудио.
-  &lt;/audio&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;h4 id=&#34;дешифровка-подкаста---для-тех-кто-не-имеет-возможности-слушать&#34;&gt;Дешифровка подкаста - для тех, кто не имеет возможности слушать&lt;/h4&gt;
-&lt;p&gt;🎙 Спикеры:&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Выпуск №21</title>
       <link>//localhost:1313/00-posts/21/</link>
       <pubDate>Sun, 06 Jul 2025 08:00:00 +0300</pubDate>
