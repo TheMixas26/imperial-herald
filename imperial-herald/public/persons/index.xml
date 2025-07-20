@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Имперские герои on Имперский Вестник</title>
-    <link>//localhost:1313/persons/</link>
+    <link>/persons/</link>
     <description>Recent content in Имперские герои on Имперский Вестник</description>
     <generator>Hugo -- 0.147.3</generator>
     <language>ru-ru</language>
-    <atom:link href="//localhost:1313/persons/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/persons/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Редакторы газеты &#34;Имперский Вестник&#34;</title>
-      <link>//localhost:1313/persons/editors/editors/</link>
+      <link>/persons/editors/editors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/persons/editors/editors/</guid>
+      <guid>/persons/editors/editors/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Они стоят на страже истины. Они несут свет знаний в каждый дом Империи.&lt;/strong&gt;&lt;br&gt;
 Благодаря их труду «Имперский Вестник» ежедневно выходит в свет, отражая волю Высшего Совета и голос народа.&lt;/p&gt;
 &lt;p&gt;Позвольте представить команду, которая создает для вас лучшие материалы Империи:&lt;/p&gt;
@@ -28,9 +28,9 @@
     </item>
     <item>
       <title>Генералы Имперской Гвардии</title>
-      <link>//localhost:1313/persons/impg/generals/</link>
+      <link>/persons/impg/generals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/persons/impg/generals/</guid>
+      <guid>/persons/impg/generals/</guid>
       <description>&lt;p&gt;Список прославившихся генералов Имперской армии. Элитные военные. Лучшие стратеги из лушчих.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Адриан Валкориус&lt;/strong&gt; — командир 301-й дивизии Имперской Гвардии. Стратег осад шестого поколения, сдержал четыре фронта одновременно.&lt;/li&gt;

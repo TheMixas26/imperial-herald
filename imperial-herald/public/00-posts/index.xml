@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>00-Posts on Имперский Вестник</title>
-    <link>//localhost:1313/00-posts/</link>
+    <link>/00-posts/</link>
     <description>Recent content in 00-Posts on Имперский Вестник</description>
     <generator>Hugo -- 0.147.3</generator>
     <language>ru-ru</language>
     <lastBuildDate>Fri, 18 Jul 2025 23:00:00 +0300</lastBuildDate>
-    <atom:link href="//localhost:1313/00-posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/00-posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Выпуск №23</title>
-      <link>//localhost:1313/00-posts/23/</link>
+      <link>/00-posts/23/</link>
       <pubDate>Fri, 18 Jul 2025 23:00:00 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/23/</guid>
+      <guid>/00-posts/23/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - Стандартное издание!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 &lt;em&gt;20 Вайлен 3412 года, Альден&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;display: flex; align-items: center; justify-content: center; font-family: monospace; font-size: 2rem;&#34;&gt;
@@ -26,9 +26,9 @@
     </item>
     <item>
       <title>Выпуск №22</title>
-      <link>//localhost:1313/00-posts/22/</link>
+      <link>/00-posts/22/</link>
       <pubDate>Mon, 14 Jul 2025 23:00:00 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/22/</guid>
+      <guid>/00-posts/22/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - Экстренное издание!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 &lt;em&gt;15 Вайлен 3412 года, Соварин&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -40,9 +40,9 @@
     </item>
     <item>
       <title>Выпуск №21</title>
-      <link>//localhost:1313/00-posts/21/</link>
+      <link>/00-posts/21/</link>
       <pubDate>Sun, 06 Jul 2025 08:00:00 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/21/</guid>
+      <guid>/00-posts/21/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - Стандартное издание!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 7 Вайлен 3412 года, Руденис&lt;/p&gt;
 &lt;hr&gt;
@@ -54,9 +54,9 @@
     </item>
     <item>
       <title>Выпуск №20</title>
-      <link>//localhost:1313/00-posts/20/</link>
+      <link>/00-posts/20/</link>
       <pubDate>Fri, 20 Jun 2025 21:00:00 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/20/</guid>
+      <guid>/00-posts/20/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - Стандартное издание!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 21 Дайлен 3412 года, Варсталь&lt;/p&gt;
 &lt;hr&gt;
@@ -68,9 +68,9 @@
     </item>
     <item>
       <title>Выпуск №19</title>
-      <link>//localhost:1313/00-posts/19/</link>
+      <link>/00-posts/19/</link>
       <pubDate>Wed, 18 Jun 2025 21:41:00 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/19/</guid>
+      <guid>/00-posts/19/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - Стандартное издание!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 19 Дайлен 3412 года, Мирдейн&lt;/p&gt;
 &lt;hr&gt;
@@ -81,9 +81,9 @@
     </item>
     <item>
       <title>Выпуск №18</title>
-      <link>//localhost:1313/00-posts/18/</link>
+      <link>/00-posts/18/</link>
       <pubDate>Tue, 17 Jun 2025 10:05:06 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/18/</guid>
+      <guid>/00-posts/18/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ЭКСТРЕННОЕ СПЕЦИАЛЬНОЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 18 Дайлен 3412 года, Альден&lt;/p&gt;
 &lt;hr&gt;
@@ -99,9 +99,9 @@
     </item>
     <item>
       <title>Выпуск №17</title>
-      <link>//localhost:1313/00-posts/17/</link>
+      <link>/00-posts/17/</link>
       <pubDate>Wed, 11 Jun 2025 10:05:06 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/17/</guid>
+      <guid>/00-posts/17/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ОБЪЯВЛЕНИЕ ДЛЯ ГРАЖДАН&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 12 Дайлен 3412 года, Варсталь&lt;/p&gt;
 &lt;hr&gt;
@@ -120,9 +120,9 @@
     </item>
     <item>
       <title>Выпуск №16</title>
-      <link>//localhost:1313/00-posts/16/</link>
+      <link>/00-posts/16/</link>
       <pubDate>Tue, 10 Jun 2025 08:10:21 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/16/</guid>
+      <guid>/00-posts/16/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ИНФОРМАЦИОННОЕ УТРО&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 11 Дайлен 3412 года, Мирдейн&lt;/p&gt;
 &lt;hr&gt;
@@ -134,9 +134,9 @@
     </item>
     <item>
       <title>Выпуск №15</title>
-      <link>//localhost:1313/00-posts/15/</link>
+      <link>/00-posts/15/</link>
       <pubDate>Mon, 09 Jun 2025 10:05:06 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/15/</guid>
+      <guid>/00-posts/15/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - НАУЧНО-ТЕХНОЛОГИЧЕСКОЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 10 Дайлен 3412 года, Альден&lt;/p&gt;
 &lt;h3 id=&#34;новый-рубеж-развития&#34;&gt;&lt;strong&gt;НОВЫЙ РУБЕЖ РАЗВИТИЯ&lt;/strong&gt;&lt;/h3&gt;
@@ -147,9 +147,9 @@
     </item>
     <item>
       <title>Выпуск №14</title>
-      <link>//localhost:1313/00-posts/14/</link>
+      <link>/00-posts/14/</link>
       <pubDate>Thu, 15 May 2025 23:33:04 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/14/</guid>
+      <guid>/00-posts/14/</guid>
       <description>&lt;p&gt;Имперский Вестник 🗞 - СПЕЦИАЛЬНОЕ ДИПЛОМАТИЧЕСКОЕ ИЗДАНИЕ&lt;/p&gt;
 &lt;p&gt;📆 15 Тирса 3412 года, Элинор&lt;/p&gt;
 &lt;p&gt;🔹 ПЕРВЫЙ КОНТАКТ
@@ -159,9 +159,9 @@
     </item>
     <item>
       <title>Выпуск №13</title>
-      <link>//localhost:1313/00-posts/13/</link>
+      <link>/00-posts/13/</link>
       <pubDate>Tue, 13 May 2025 00:30:46 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/13/</guid>
+      <guid>/00-posts/13/</guid>
       <description>&lt;p&gt;Имперский Вестник 🗞 - НОЧНОЕ ИЗДАНИЕ&lt;/p&gt;
 &lt;p&gt;📆 15 Тирса 3412 года, Элинор&lt;/p&gt;
 &lt;h3 id=&#34;-ответ-высшего-совета-на-дерзость-вераны&#34;&gt;🚫 &lt;strong&gt;Ответ Высшего Совета на дерзость Вераны!!!&lt;/strong&gt;&lt;/h3&gt;
@@ -182,9 +182,9 @@
     </item>
     <item>
       <title>Выпуск №12</title>
-      <link>//localhost:1313/00-posts/12/</link>
+      <link>/00-posts/12/</link>
       <pubDate>Mon, 12 May 2025 00:36:26 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/12/</guid>
+      <guid>/00-posts/12/</guid>
       <description>&lt;p&gt;Имперский Вестник 🗞 - УТРЕННЕЕ ИЗДАНИЕ&lt;/p&gt;
 &lt;p&gt;📆 25 Эларис 3412 года, Соварин&lt;/p&gt;
 &lt;h3 id=&#34;-верана-послала-высший-совет&#34;&gt;🤬 &lt;strong&gt;Верана послала Высший Совет!&lt;/strong&gt;&lt;/h3&gt;
@@ -195,9 +195,9 @@
     </item>
     <item>
       <title>Выпуск №11</title>
-      <link>//localhost:1313/00-posts/11/</link>
+      <link>/00-posts/11/</link>
       <pubDate>Sun, 11 May 2025 00:36:28 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/11/</guid>
+      <guid>/00-posts/11/</guid>
       <description>&lt;p&gt;Имперский Вестник 🗞 - УТРЕННЕЕ ИЗДАНИЕ&lt;/p&gt;
 &lt;p&gt;📆 24 Эларис 3412 года, Варсталь&lt;/p&gt;
 &lt;h3 id=&#34;-подозрительный-веранский-закон&#34;&gt;&lt;strong&gt;🤨 Подозрительный Веранский закон&lt;/strong&gt;&lt;/h3&gt;
@@ -207,9 +207,9 @@
     </item>
     <item>
       <title>Выпуск №10</title>
-      <link>//localhost:1313/00-posts/10/</link>
+      <link>/00-posts/10/</link>
       <pubDate>Sat, 10 May 2025 00:36:31 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/10/</guid>
+      <guid>/00-posts/10/</guid>
       <description>&lt;p&gt;Имперский Вестник 🗞 - ПРАЗДНИЧНОЕ ВЕЧЕРНЕЕ ИЗДАНИЕ&lt;/p&gt;
 &lt;p&gt;📆 22 Эларис 3412 года, Альден&lt;/p&gt;
 &lt;h3 id=&#34;-день-техномага&#34;&gt;&lt;strong&gt;🎉 День Техномага!&lt;/strong&gt;&lt;/h3&gt;
@@ -218,9 +218,9 @@
     </item>
     <item>
       <title>Выпуск №9</title>
-      <link>//localhost:1313/00-posts/9/</link>
+      <link>/00-posts/9/</link>
       <pubDate>Sun, 20 Apr 2025 22:41:39 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/9/</guid>
+      <guid>/00-posts/9/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ВЕЧЕРНЕЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 19 Эларис 3412 года, Руденис&lt;/p&gt;
 &lt;hr&gt;
@@ -240,9 +240,9 @@
     </item>
     <item>
       <title>Выпуск №8</title>
-      <link>//localhost:1313/00-posts/8/</link>
+      <link>/00-posts/8/</link>
       <pubDate>Fri, 11 Apr 2025 22:49:45 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/8/</guid>
+      <guid>/00-posts/8/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ВЕЧЕРНЕЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📆 10 Эларис 3412 года, Гальтрон&lt;/p&gt;
 &lt;hr&gt;
@@ -253,9 +253,9 @@
     </item>
     <item>
       <title>Выпуск №7</title>
-      <link>//localhost:1313/00-posts/7/</link>
+      <link>/00-posts/7/</link>
       <pubDate>Tue, 08 Apr 2025 23:02:06 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/7/</guid>
+      <guid>/00-posts/7/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - МАШТАБНОЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📅 07 Эларис 3412 года, Мирдейн&lt;/p&gt;
 &lt;hr&gt;
@@ -277,9 +277,9 @@
     </item>
     <item>
       <title>Выпуск №6</title>
-      <link>//localhost:1313/00-posts/6/</link>
+      <link>/00-posts/6/</link>
       <pubDate>Mon, 17 Mar 2025 23:05:27 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/6/</guid>
+      <guid>/00-posts/6/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ЕЖЕНЕДЕЛЬНОЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📅 15 Эльтора 3412 года, Соварин&lt;/p&gt;
 &lt;hr&gt;
@@ -293,9 +293,9 @@
     </item>
     <item>
       <title>Выпуск №5</title>
-      <link>//localhost:1313/00-posts/5/</link>
+      <link>/00-posts/5/</link>
       <pubDate>Fri, 14 Mar 2025 23:07:28 +0300</pubDate>
-      <guid>//localhost:1313/00-posts/5/</guid>
+      <guid>/00-posts/5/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Имперский Вестник 🗞 - ЕЖЕНЕДЕЛЬНОЕ ИЗДАНИЕ&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;📅 12 Эльтора 3412 года, Альден&lt;/p&gt;
 &lt;hr&gt;

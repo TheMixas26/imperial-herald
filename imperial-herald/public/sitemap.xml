@@ -2,96 +2,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:50553/persons/editors/editors/</loc>
+    <loc>/persons/editors/editors/</loc>
   </url><url>
-    <loc>//localhost:50553/persons/impg/generals/</loc>
+    <loc>/persons/impg/generals/</loc>
   </url><url>
-    <loc>//localhost:50553/00-posts/</loc>
+    <loc>/00-posts/</loc>
     <lastmod>2025-07-18T23:03:09+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/23/</loc>
+    <loc>/00-posts/23/</loc>
     <lastmod>2025-07-18T23:00:00+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/22/</loc>
+    <loc>/00-posts/22/</loc>
     <lastmod>2025-07-14T23:00:00+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/21/</loc>
+    <loc>/00-posts/21/</loc>
     <lastmod>2025-07-06T08:00:00+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/20/</loc>
+    <loc>/00-posts/20/</loc>
     <lastmod>2025-06-20T21:00:00+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/19/</loc>
+    <loc>/00-posts/19/</loc>
     <lastmod>2025-06-18T21:41:00+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/projects/oko-1/</loc>
+    <loc>/projects/oko-1/</loc>
     <lastmod>2025-06-18T21:36:31+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/projects/</loc>
+    <loc>/projects/</loc>
     <lastmod>2025-06-18T21:36:31+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/</loc>
+    <loc>/</loc>
     <lastmod>2025-06-18T20:29:35+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/military-reports-sus/</loc>
+    <loc>/military-reports-sus/</loc>
     <lastmod>2025-06-18T14:14:27+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/18/</loc>
+    <loc>/00-posts/18/</loc>
     <lastmod>2025-06-17T10:05:06+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/17/</loc>
+    <loc>/00-posts/17/</loc>
     <lastmod>2025-06-11T10:05:06+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/16/</loc>
+    <loc>/00-posts/16/</loc>
     <lastmod>2025-06-10T08:10:21+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/15/</loc>
+    <loc>/00-posts/15/</loc>
     <lastmod>2025-06-09T10:05:06+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/14/</loc>
+    <loc>/00-posts/14/</loc>
     <lastmod>2025-05-15T23:33:04+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/13/</loc>
+    <loc>/00-posts/13/</loc>
     <lastmod>2025-05-13T00:30:46+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/12/</loc>
+    <loc>/00-posts/12/</loc>
     <lastmod>2025-05-12T00:36:26+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/11/</loc>
+    <loc>/00-posts/11/</loc>
     <lastmod>2025-05-11T00:36:28+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/10/</loc>
+    <loc>/00-posts/10/</loc>
     <lastmod>2025-05-10T00:36:31+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/9/</loc>
+    <loc>/00-posts/9/</loc>
     <lastmod>2025-04-20T22:41:39+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/8/</loc>
+    <loc>/00-posts/8/</loc>
     <lastmod>2025-04-11T22:49:45+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/7/</loc>
+    <loc>/00-posts/7/</loc>
     <lastmod>2025-04-08T23:02:06+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/6/</loc>
+    <loc>/00-posts/6/</loc>
     <lastmod>2025-03-17T23:05:27+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/00-posts/5/</loc>
+    <loc>/00-posts/5/</loc>
     <lastmod>2025-03-14T23:07:28+03:00</lastmod>
   </url><url>
-    <loc>//localhost:50553/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>//localhost:50553/archives/project-find-the-abyss/</loc>
+    <loc>/archives/project-find-the-abyss/</loc>
   </url><url>
-    <loc>//localhost:50553/tags/</loc>
+    <loc>/tags/</loc>
   </url><url>
-    <loc>//localhost:50553/persons/council/</loc>
+    <loc>/persons/council/</loc>
   </url><url>
-    <loc>//localhost:50553/archives/</loc>
+    <loc>/archives/</loc>
   </url><url>
-    <loc>//localhost:50553/persons/</loc>
+    <loc>/persons/</loc>
   </url><url>
-    <loc>//localhost:50553/map/</loc>
+    <loc>/map/</loc>
   </url><url>
-    <loc>//localhost:50553/archives/about-archives/</loc>
+    <loc>/archives/about-archives/</loc>
   </url>
 </urlset>
