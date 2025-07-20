@@ -1,5 +1,8 @@
 hugo new content/00-Posts/smth.md
 
+<div style="display: flex; align-items: center; justify-content: center; font-family: monospace; font-size: 2rem;">
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-
+</div>
 
 
 
