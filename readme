@@ -1,1 +1,11 @@
 hugo new content/00-Posts/smth.md
+
+<div style="display: flex; align-items: center; justify-content: center; font-family: monospace; font-size: 2rem;">
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-
+</div>
+
+
+
+
+
+give @a netherite_chestplate[trim={pattern:silence,material:amethyst},custom_name=[{"text":"⊇ Нагрудник Божества ","italic":false,"bold":true,"color":"light_purple"},{"text":"Ξ","italic":false,"bold":true,"color":"light_purple"}],lore=[[{"text":"Данный артефакт неизвестного","italic":false,"color":"#888888"}],[{"text":"происхождени дарует носителю","italic":false,"color":"#888888"}],[{"text":"божественную защиту и мощь.","italic":false,"color":"#888888"}],[{"text":"Но и богов можно убить.","color":"#888888","bold":true,"italic":true}]],enchantments={binding_curse:1,fire_protection:5,projectile_protection:5,protection:5,thorns:5,vanishing_curse:1},attribute_modifiers=[{type:armor,amount:5,slot:chest,operation:add_value,id:"1752862907025"},{type:max_health,amount:20,slot:chest,operation:add_value,id:"1752862907027"},{type:knockback_resistance,amount:-0.45,operation:add_value,id:"1752863440060"}],unbreakable={}]
