@@ -11,3 +11,7 @@ layout = "single"
 ---
 
 📄 [Project "Find the Abyss"](project-Find-the-Abyss)
+
+📄 [Project "Prcsise"](project-Pracsise)
+
+📄 [Project "ObsDis"](Observers-disease)

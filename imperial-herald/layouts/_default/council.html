@@ -28,7 +28,7 @@
 
     .table_svg {
       position: absolute;
-      top: 40px;
+      top: -10px;
       transform: translateX(-50%);
       scale: 50%;
       z-index: 5;
@@ -98,6 +98,15 @@
       line-height: 100px;
     }
 
+    .council-member a:link { color: purple; }    /* Непосещённая ссылка */
+    .council-member a:visited { color: purple; } /* Посещённая */
+    .council-member a:hover { color: rgb(160, 0, 160); }    /* Наведение курсора */
+    .council-member a:active { color: rgb(114, 40, 114); } /* Нажатие */
+
+    .council-member a{
+      text-decoration: underline;
+    }
+
     .info-box {
       position: absolute;
       background: rgba(50, 50, 80, 0.95);
@@ -107,7 +116,7 @@
       width: 380px;
       box-shadow: 0 0 20px rgba(100, 0, 200, 0.6);
       display: none;
-      z-index: 150;
+      z-index: 32;
       transform: translateX(-50%);
     }
 
@@ -131,7 +140,7 @@
     .m1 .info-box { position: absolute;}
     .m2 .info-box { position: absolute;}
     .m3 .info-box { position: absolute;}
-    .m4 .info-box { position: absolute;}
+    .m4 .info-box { position: absolute; z-index: 50;}
     .m5 .info-box { position: absolute;}
     
     
@@ -144,15 +153,16 @@
 <p>Наведите курсор на одного из советников, чтобы узнать о нём.</p>
 
 <div class="council-table">
-  <div class="table_svg"><img src="/images/council/table.png" alt="s"></div>
+  <div class="table_svg"><img src="/images/council/table2.png" alt="s"></div>
 
   <!-- Советник 1 -->
   <div class="council-member m1">
-    <img src="/images/council/ishar.png" alt="Шкаручела">
+    <img src="/images/council/shkaruchela.png" alt="Шкаручела">
     <div class="info-box">
       <h2>Шкаручела Фамилия</h2>
       <p><i>"Цитата"</i></p>
       <p>Создательница Эзериума и расы Неко, покорительница феномена свободной торговли, величайшая магесса огня! Её порой безумные идеи — топливо для развития Империи.</p>
+      <a href="Shkaruchela">Подробнее...</a>
     </div>
   </div>
 
@@ -163,6 +173,7 @@
       <h2>Фелония Ламберт</h2>
       <p><i>"Истинная магия — в понимании мира."</i></p>
       <p>Зелёная тень, что спасала десятки миров. Теперь она прибыла в Империю, чтобы спасти и её. Мастер печатей, щитов и барьеров.</p>
+      <a href="Felonia">Подробнее...</a>
     </div>
   </div>
 
@@ -173,6 +184,7 @@
       <h2>Амодерни Боровски</h2>
       <p><i>"Величие Империи не измеряется числом башен, а глубиной воли."</i></p>
       <p>Знакомый с Империей задолго до становления правителем, Амодерни внёс невероятный вклад в развитие маготеха и подарил миру сотни изобретений.</p>
+      <a href="Amoderny">Подробнее...</a>
     </div>
   </div>
 
@@ -183,6 +195,7 @@
       <h2>Генрих Многорукий</h2>
       <p><i>"Сила Империи — в её знании."</i></p>
       <p>Его превосходительство товарищ главнокомандующий армией Империи и её высокопочтенный Высший Советник, поп всея Шуггтоа, великий строитель, инженер и закладчик, центральный банкир Империи, победитель конкурса "Золотая коленная чашечка", несравненный мастер бюрократических лабиринтов... Выучить весь его титул наизусть — достижение.</p>
+      <a href="Genrich">Подробнее...</a>
     </div>
   </div>
 
@@ -193,6 +206,7 @@
       <h2>Фандр Джи</h2>
       <p><i>"Тишина — лучший свидетель истины."</i></p>
       <p>Покоритель песочных часов Ксавирона, единственный Наблюдатель, который сумел познать суть окружающего мира до малейших деталей. Он не просто исследователь, он тот, кто умеет разбирать реальность на кусочки и лепить из неё что-то абсолютно новое. Гений.</p>
+      <a href="Fandr">Подробнее...</a>
     </div>
   </div>
 
