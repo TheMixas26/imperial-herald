@@ -39,7 +39,8 @@
   // Инициализация карты
   var map = L.map('map', {
     crs: L.CRS.Simple, // Простая проекция (если у нас не настоящая географическая карта)
-    minZoom: -1
+    minZoom: -1,
+    maxZoom: 2
   });
 
   var imperialIcon = L.icon({
@@ -54,7 +55,7 @@
 
   // Загружаем фоновую картинку (твой файл карты)
   var bounds = [[0,0], [1024,1024]]; // подгони по размеру изображения
-  var image = L.imageOverlay('/images/map-imperia.png', bounds).addTo(map);
+  var image = L.imageOverlay('/images/map.svg', bounds).addTo(map);
 
   map.fitBounds(bounds);
 
