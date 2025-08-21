@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Имперский Ветсник</title>
+    <link rel="stylesheet" href="/assets/css/stylesheet.ae3d277e69647c027e65dd7c785748f912a9be2d37da0061b9ff15a5d7fafb7b.css">
+    <style>
+    :root {
+        --index: 20px;
+        --bg-main: #0a0a14;
+        --bg-note: #211429;
+        --text-main: #e7e7e7;
+        --note-shadow: rgba(0,0,0,0.7) 5px 5px 20px 0px;
+        color: var(--text-main);
+    }
+    header, head {
+        color: var(--text-main);
+    }
+    body {
+        background: var(--bg-main) !important;
+        color: var(--text-main);
+    }
+    .notes {
+        /* width: calc(100vw - var(--index)*2); */
+        padding: calc(var(--index)*3) var(--index);
+        background: none;
+        min-height: 100vh;
+        box-shadow: #0000003f 0 -20px 50px 0;
+        column-width: calc(var(--index)*15);
+        column-gap: var(--index);
+        margin: auto 20% auto 20%;
+    }
+    .note {
+        will-change: transform, opacity;
+        font-family: "Libertinus Sans", sans-serif;
+        font-size: var(--index);
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: calc(var(--index)*2);
+        background-color: var(--bg-note);
+        border-radius: calc(var(--index)*0.5);
+        box-shadow: var(--note-shadow);
+        padding: calc(var(--index)*1.5) calc(var(--index));
+        backdrop-filter: blur(2px) brightness(0.9);
+        color: var(--text-main);
+        display: inline-block;
+        transform: perspective(800px) translateY(100px) rotateX(-60deg) translateZ(-100px);
+        opacity: 0;
+        transition: transform 0.8s ease, opacity 0.8s ease;
+    }
+    .note.show {
+        transform: perspective(800px) translateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+    .note img, .note iframe {
+        width: 100%; height: auto;
+        opacity: 0.9; 
+        mix-blend-mode: lighten;
+        filter: saturate(0.7) brightness(0.8); 
+        transition: all 0.5s ease-in-out;
+        border: none;
+        background: none;
+        transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .note a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #8ecfff;
+    }
+    .note br {
+        margin-bottom: calc(var(--index));
+    }
+
+    .header, .nav {
+        background: #18191c;
+        color: var(--text-main);
+        /* box-shadow: 0 2px 16px #0008; */
+    }
+
+    .logo a, .logo {
+        color: #e7e7e7 !important;
+        text-decoration: none;
+    }
+
+    #menu li a, #menu li span {
+        color: #e7e7e7 !important;
+        background: none;
+        transition: color 0.2s;
+    }
+
+    #menu li a:hover, #menu li span.active {
+        color: #8ecfff !important;
+    }
+
+    .logo-switches button {
+        background: none;
+        border: none;
+        color: #e7e7e7;
+        cursor: pointer;
+    }
+
+    .logo-switches svg {
+        stroke: #e7e7e7;
+        fill: none;
+        transition: stroke 0.2s;
+    }
+
+    .logo-switches button:hover svg {
+        stroke: #8ecfff;
+    }
+    </style>
+</head>
+
+
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            {{- $label_text := (site.Params.label.text | default site.Title) }}
+            {{- if site.Title }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{- if site.Params.label.icon }}
+                {{- $img := resources.Get site.Params.label.icon }}
+                {{- if $img }}
+                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+                    {{- if hugo.IsExtended -}}
+                        {{- $processableFormats = $processableFormats | append "webp" -}}
+                    {{- end -}}
+                    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+                    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                        {{- if site.Params.label.iconHeight }}
+                            {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
+                        {{ else }}
+                            {{- $img = $img.Resize "x30" }}
+                        {{- end }}
+                    {{- end }}
+                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
+                        height="{{- site.Params.label.iconHeight | default "30" -}}">
+                {{- else }}
+                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
+                    height="{{- site.Params.label.iconHeight | default "30" -}}">
+                {{- end -}}
+                {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
+                    {{ site.Params.label.iconSVG | safeHTML }}
+                {{- end -}}
+                {{- $label_text -}}
+            </a>
+            {{- end }}
+            <div class="logo-switches">
+                {{- if (not site.Params.disableThemeToggle) }}
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                {{- end }}
+
+                {{- $lang := .Lang}}
+                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
+                {{- with site.Home.Translations }}
+                <ul class="lang-switch">
+                    {{- if $separator }}<li>|</li>{{ end }}
+                    {{- range . -}}
+                    {{- if ne $lang .Lang }}
+                    <li>
+                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+                            {{- .Language.LanguageName | emojify -}}
+                            {{- else }}
+                            {{- .Lang | title -}}
+                            {{- end -}}
+                        </a>
+                    </li>
+                    {{- end -}}
+                    {{- end}}
+                </ul>
+                {{- end }}
+            </div>
+        </div>
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                    {{- if (findRE "://" .URL) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>
+<body>
+    <main class="notes">
+        <section class="note">
+            Что вы знаете об <b>Имперском Вестнике?</b>
+            И что хотели бы узнать?
+            Мы здесь стараемся быть <i>краткими</i>.
+            Иначе, кто бы вообще читал наши выпуски?)
+        </section>
+        <section class="note">
+            <b>География?</b><br>
+            Да-да, она самая! Не знаем, замечали ли вы,
+            <b>но у Империи есть своя карта!</b>
+            Зачем она? Почему? Кто знает... <br>
+            <a href="/map/"><i>Открыть карту...</i></a>
+        </section>
+        <section class="note">
+            <b>А у вас есть проеткы?</b><br>
+            Конечно, у <i>любого государства</i> таковые имеются!
+            Вопрос лишь в том, рассказывают ли о них или молчат.
+            <b>Но Империя не молчит!</b><br>
+            <a href="/projects/"><i>Перейти к проектам...</i></a>
+        </section>
+        <section class="note">
+            Ограниченные умы видят ограниченность только в других
+        </section>
+        <section class="note">
+            <b>ОДНА БОЛЬШАЯ ОТСЫЛКА</b><br>
+            Нет, ну в моём произведении безусловно <i>полным полно</i> отсылок, но... История всё-таки оригинальная,
+            нам всем прекрасно видны сходства со сногими другими проектами, но это не более, чем совпадения. <br>
+            <i>Лололошка тут не при чём...</i>
+        </section>
+        <section class="note">
+            <b>Наши выпуски!</b><br>
+            Погрузитесь в <b>живую</b> хронику Империи: <i>день за днём, выпуск за выпуском</i>.
+            <b>Все важные события</b>, от повседневных новостей до переломных моментов.<br>
+            <a href="/00-Posts/"><i>Читать выпуски...</i></a>
+        </section>
+        <section class="note">
+            <b>А ещё сайты?</b><br>
+            Конечно у нас есть и другие <b>проимперские ресурсы</b>!
+            Если хватит <i>времени и духу</i> их посктить, то разумеется, прикладываем ссылки!<br>
+            <a href="https://reolo.fandom.com/ru/wiki/Imperial_%D0%92%D0%B8%D0%BA%D0%B8">Имперская ВИКИ</a>
+            <a href="https://docs.google.com/document/d/1zHX1EPBbiBE9jDVRyT6r0SMeZpKZhszVUwn2v7qx45c/edit?usp=sharing">«Имперские Хроники»</a>
+            <a href="https://t.me/reolo_channel">Telegram-канал Вестника</a>
+        </section>
+        <section class="note">
+            <b>Да кто этот ваш <i>Высший Совет?</i></b><br>
+            А тут даже гадать не надо! Специально для вас существует прекрасная 
+            подробная статья на эту тему! <br>
+            <a href="persons/council/">Высший Совет Империи</a>
+        </section>
+        <section class="note">
+            <b>Военные сводки</b>
+            Официальные и достоверные новости с фронтов и приграничных территорий.
+            Раузмеется, мы <i>не</i> разглошаем секретную информацию, 
+            но это не значит, что сводки не интересны!
+            <b>Не верите? Взгляните сами!</b><br>
+            <a href="/military-reports/"><i>Ознакомиться со сводками...</i></a>        
+        </section>
+        <section class="note">
+            <b>Комиксы?</b><br>
+            <i>А почему бы и нет?)</i><br>
+            Единственное, автор не умеет рисовать... Но может, <b>умеете вы</b>?
+        </section>
+        <section class="note">
+            <b>Наших читателей пока не так много</b><br>
+            Но это лишь значит что все вы — те, кто это читает, стоите у начала Империи, и каждый из вас может повлиять на нее!<br/>
+            Кто знает, чем она обернётся в будущем...
+            <i>Есть википедия, есть книжки...</i> Удачи с погружением в ЛОР!
+        </section>
+        <section class="note">
+            <b>Почему Империя?..</b><br/>
+            Фигушки вам, никакие Империи о вас не заботяться и не собираются строить заводы. 
+            Империя получила такое имя только потому, что раньше был Император. <br> А вы думали?)))
+        </section>
+        <section class="note">
+            <b>Не нравится история? Создай свою!</b><br>
+            Да-да! Если вам не понраивлся сюжетный поворот, вы в полном праве создать свою собственную историю
+            в рамках этой вселенной! Никаких ограничений, кроме вашей собственной фантазии! <br> Творите, не стестняйтесь!
+        </section>
+        <section class="note">
+            А вы слышали, что у Империи есть свои герои?<br>
+            Великие маги, прославленные полководцы, выдающиеся учёные — те, кто создавал, защищал и развивал нашу страну.
+            Пусть их подвиги не такие интересные, но имена - вот действительно стоящая вешь!
+            <i>Ходит легенда, что среди них есть пасхалка, чтобы это не значило...</i><br>
+            <a href="/persons/">Узнать героев!</a>
+        </section>
+        <section class="note">
+            <b>Автор</b><br>
+            Просто существует и хочет придумать достойный вымышленный мир)
+        </section>
+    </main>
+    <script>
+    document.querySelectorAll('.note').forEach((el, i) => {
+        setTimeout(() => el.classList.add('show'), 100 + i * 120);
+    });
+    </script>
+</body>
+</html>
