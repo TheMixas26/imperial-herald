@@ -111,6 +111,24 @@
     .logo-switches button:hover svg {
         stroke: #8ecfff;
     }
+
+    @media (max-width: 600px) {
+        .notes {
+            margin: 0;
+            padding: var(--index);
+            column-width: 100%;
+            min-width: 0;
+        }
+        .note {
+            font-size: 1rem;
+            padding: var(--index);
+            margin-bottom: var(--index);
+            border-radius: 10px;
+            max-width: 100vw;
+            box-sizing: border-box;
+            text-align: left;
+        }
+    }
     </style>
 </head>
 

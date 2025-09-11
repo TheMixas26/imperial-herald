@@ -1,0 +1,96 @@
+<div id="crossword"></div>
+<pre id="crossword-data" style="display:none;">{{ .Inner | safeHTML }}</pre>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="/js/jquery.crossword.js"></script>
+<!-- <script src="/js/script.js"></script> -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var raw = document.getElementById('crossword-data').textContent.trim();
+    if (raw.length > 0) {
+      try {
+        var puzzleData = JSON.parse(raw);
+        // new CrosswordPuzzle(puzzleData, "crossword");
+        $('#puzzle-wrapper').crossword(puzzleData);
+      } catch(e) {
+        document.getElementById('crossword').innerHTML = "<b>Ошибка загрузки кроссворда: неверный формат данных.</b>\n"+e;
+      }
+    } else {
+      document.getElementById('crossword').innerHTML = "<b>Нет данных для кроссворда.</b>";
+    }
+  });
+</script>
+
+<style type="text/css" media="screen">
+    #puzzle-wrapper {
+        max-width: 800px;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    #puzzle-wrapper table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #puzzle-wrapper td {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #4b0082;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        background-color: #333;
+        position: relative;
+    }
+
+    td input {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: none;
+        text-align: center;
+        font-size: 1.5em;
+        color: #666;
+        background-color: #222222;
+        box-sizing: border-box;
+    }
+
+    td span {
+        font-size: 0.8em;
+        position: absolute;
+    }
+    
+    input.done {
+        font-weight: bold;
+        color: green;
+    }
+    
+    .active,
+    .clues-active {
+        background-color: #69006994;
+    }
+    .clue-done {
+        color: #999;
+        text-decoration: line-through;
+    }
+    
+    #puzzle-wrapper {
+        /* float: left; */
+        width: 200%;
+        /* margin-right: 3%; */
+    }
+    #puzzle-clues {
+        float: left;
+        width: 40%;
+    }
+    
+    #puzzle-clues li{
+        font-size: 1.2em;
+        margin: .3em;
+        line-height: 1.6em;
+    }
+		
+	</style>
+<div id="puzzle-wrapper"></div>
