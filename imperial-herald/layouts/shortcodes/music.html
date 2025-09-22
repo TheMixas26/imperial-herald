@@ -7,7 +7,25 @@
   margin: 2rem auto;
   box-shadow: 0 0 20px rgba(108, 46, 185, 0.5);
   font-family: 'Segoe UI', sans-serif;
-  color: #e0d3ff;">
+  color: #e0d3ff;
+  width: 100%;
+  box-sizing: border-box;">
+  <style>
+    .music-details {
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+      max-height: 2.2em;
+    }
+    details[open] .music-details {
+      max-height: 1500px;
+      transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1);
+    }
+    details summary {
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+    }
+  </style>
   <div style="font-size: 1.25rem; margin-bottom: 0.5rem;">
     🎵 <strong>{{ .Get "name" }}</strong><br>
     <span style="font-size: 0.9rem; color: #bca7ff;">{{ .Get "authors" }}</span>
@@ -16,4 +34,17 @@
     <source src="{{ .Get "link" }}" type="audio/mpeg">
     Ваш браузер не поддерживает аудио.
   </audio>
+  {{ with .Get "text" }}
+    {{ $text := . | replaceRE "(\\\\n|\\n|\\r\\n|\\r)" "<br>" }}
+    {{ if $text }}
+      <span style="font-size: 0.9rem; color: #bca7ff;">
+        <details>
+          <summary>Текст песни</summary>
+          <div class="music-details">
+            {{ $text | safeHTML }}
+          </div>
+        </details>
+      </span>
+    {{ end }}
+  {{ end }}
 </div>
