@@ -10,8 +10,28 @@ layout = "single"
 
 ---
 
+### Указы Высшего Совета
+
+📄 [Указ №231](decree-231)
+
+📄 [Указ №233](decree-233)
+
+📄 [Указ №314](decree-314)
+
+📄 [Указ №314-1](decree-314-1)
+
+📄 [Указ №389](decree-389)
+
+---
+
+### Засекреченные материалы
+
 📄 [Project "Find the Abyss"](project-Find-the-Abyss)
 
 📄 [Project "Prаcsise"](project-Pracsise)
 
 📄 [Project "ObsDis"](Observers-disease)
+
+📄 [Project "Core"](Project-Core)
+
+📄 [Project "Nexus"](Project-Nexus)
