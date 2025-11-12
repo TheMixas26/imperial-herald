@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background: #0a0a14;
       color: #e0e0ff;
       font-family: 'Georgia', serif;
-      padding: 40px;
       text-align: center;
+      margin: 0;
+      padding: 20px;
     }
 
     h1 {
@@ -19,19 +24,24 @@
       margin-bottom: 10px;
     }
 
+    p {
+      margin: 10px 0;
+    }
+
     .council-table {
       position: relative;
       width: 614.5px;
       height: 400px;
-      margin: 0 auto;
+      margin: 30px auto;
     }
 
     .table_svg {
       position: absolute;
       top: -10px;
-      transform: translateX(-50%);
+      /* left: 50%; */
+      transform: translateX(-42%);
       scale: 50%;
-      z-index: 5;
+      z-index: 1;
     }
 
     .table-surface::before {
@@ -44,43 +54,40 @@
       height: 200px;
       background: #0a0a14;
       border-radius: 50%;
-      z-index:7;
+      z-index: 7;
     }
 
     .table-surface::after {
       content: '';
       position: absolute;
-      top: 54px; 
+      top: 54px;
       left: 50%;
       transform: translateX(-50%);
-      width: 608px; 
+      width: 608px;
       height: 92px;
       background: transparent;
       border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-      /* box-shadow: 0 0 0 4px #6a00b9;  */
       box-shadow: 0 0 20px rgba(100, 0, 200, 0.6), 0 0 0 5px #6a00b9;
       z-index: 6;
     }
 
     .council-member {
-      /* margin-top: 400px; */
       position: absolute;
       width: 100px;
       height: 100px;
       border-radius: 50%;
       border: 3px solid #fff;
+      padding: 0;
+      background: transparent;
+      margin: 0;
       cursor: pointer;
-      transition: transform 0.3s;
-      text-align: center;
-      transform: translateX(-50%);
+      transition: all 0.3s;
       z-index: 10;
     }
 
     .council-member:hover {
       width: 120px;
       height: 120px;
-      transform: translateX(-50%);
-      z-index: 10;
       border-radius: 70%;
       border: 4px solid #9e1897;
     }
@@ -88,35 +95,23 @@
     .council-member img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      overflow: hidden;
       border-radius: 50%;
-      display: block;
-      margin: 0 auto; 
-      text-align: center;
-      color: #e0e0ff;
-      line-height: 100px;
-    }
-
-    .council-member a:link { color: purple; }    /* Непосещённая ссылка */
-    .council-member a:visited { color: purple; } /* Посещённая */
-    .council-member a:hover { color: rgb(160, 0, 160); }    /* Наведение курсора */
-    .council-member a:active { color: rgb(114, 40, 114); } /* Нажатие */
-
-    .council-member a{
-      text-decoration: underline;
+      border: none;
+      margin: 0;
     }
 
     .info-box {
       position: absolute;
+      display: none;
       background: rgba(50, 50, 80, 0.95);
       border: 2px solid #6a00b9;
       border-radius: 15px;
       padding: 20px;
       width: 380px;
       box-shadow: 0 0 20px rgba(100, 0, 200, 0.6);
-      display: none;
-      z-index: 32;
+      z-index: 100;
+      top: 140px;
+      left: 50%;
       transform: translateX(-50%);
     }
 
@@ -124,11 +119,35 @@
       display: block;
     }
 
-    /* .m1 { left: 30px; top: 30%; } */
-    /* .m2 { left: 138.625px; top: 20%; } */
-    /* .m3 { left: 277.25px; top: 15%; } */
-    /* .m4 { left: 415.875px; top: 20%; } */
-    /* .m5 { left: 584.5px; top: 30%; } */
+    .info-box h2 {
+      font-size: 1.5em;
+      margin: 10px 0 5px;
+      color: #c9b3ff;
+    }
+
+    .info-box p {
+      font-size: 0.95em;
+      line-height: 1.5;
+      margin: 10px 0;
+      color: #d0d0ff;
+    }
+
+    .info-box p:first-of-type {
+      font-style: italic;
+      color: #b9a3d9;
+      font-size: 0.9em;
+    }
+
+    .council-member a:link { color: #9e7dd9; }
+    .council-member a:visited { color: #9e7dd9; }
+    .council-member a:hover { color: rgb(160, 0, 160); }
+    .council-member a:active { color: rgb(114, 40, 114); }
+
+    .council-member a {
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 10px;
+    }
 
     .m1 { left: 8%; top: 45%; }
     .m2 { left: 28%; top: 27%; }
@@ -136,15 +155,80 @@
     .m4 { left: 72%; top: 27%; }
     .m5 { left: 92%; top: 45%; }
 
+    .m4 .info-box { z-index: 1000; }
+    .m5 { z-index: 6; }
 
-    .m1 .info-box { position: absolute;}
-    .m2 .info-box { position: absolute;}
-    .m3 .info-box { position: absolute;}
-    .m4 .info-box { position: absolute; z-index: 50;}
-    .m5 .info-box { position: absolute;}
-    
-    
+    @media (max-width: 899px) {
+      .council-table {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+      }
 
+      .table_svg {
+        display: none;
+      }
+
+      .table-surface::before,
+      .table-surface::after {
+        display: none !important;
+      }
+
+      .council-member {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
+        border: 3px solid #6a00b9 !important;
+        padding: 15px !important;
+        background: rgba(50, 50, 80, 0.95) !important;
+        margin: 15px 0 !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+      }
+
+      .council-member:hover {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 15px !important;
+        border: 4px solid #9e1897 !important;
+        box-shadow: 0 0 20px rgba(100, 0, 200, 0.6);
+        transform: scale(1.02);
+      }
+
+      .council-member img {
+        width: 120px !important;
+        height: 120px !important;
+        border-radius: 50% !important;
+        display: block;
+        margin: 0 auto 15px !important;
+        line-height: auto !important;
+      }
+
+      .info-box {
+        position: static !important;
+        display: block !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        z-index: auto !important;
+        transform: none !important;
+        margin-top: 15px;
+      }
+
+      .m1, .m2, .m3, .m4, .m5 {
+        position: relative !important;
+      }
+
+      .m1 .info-box, .m2 .info-box, .m3 .info-box, .m4 .info-box, .m5 .info-box {
+        position: static !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -153,9 +237,8 @@
 <p>Наведите курсор на одного из советников, чтобы узнать о нём.</p>
 
 <div class="council-table">
-  <div class="table_svg"><img src="/images/council/table2.png" alt="s"></div>
+  <div class="table_svg"><img src="/images/council/table2.png" alt="Стол"></div>
 
-  <!-- Советник 1 -->
   <div class="council-member m1">
     <img src="/images/council/shkaruchela.png" alt="Шкаручела">
     <div class="info-box">
@@ -166,7 +249,6 @@
     </div>
   </div>
 
-  <!-- Советник 2 -->
   <div class="council-member m2">
     <img src="/images/council/Felonia.jpg" alt="Фелония">
     <div class="info-box">
@@ -177,7 +259,6 @@
     </div>
   </div>
 
-  <!-- Советник 3 -->
   <div class="council-member m3">
     <img src="/images/council/Amoderny.jpg" alt="Амодерни">
     <div class="info-box">
@@ -188,7 +269,6 @@
     </div>
   </div>
 
-  <!-- Советник 4 -->
   <div class="council-member m4">
     <img src="/images/council/Genrich.jpg" alt="Генрих">
     <div class="info-box">
@@ -199,7 +279,6 @@
     </div>
   </div>
 
-  <!-- Советник 5 -->
   <div class="council-member m5">
     <img src="/images/council/Fandr.jpg" alt="Фандр">
     <div class="info-box">
@@ -222,20 +301,21 @@
     });
 
     member.addEventListener('mouseleave', () => {
+      if (window.innerWidth < 900) return;
       member.classList.remove('active');
+    });
+
+    member.addEventListener('click', () => {
+      councilMembers.forEach(m => m.classList.remove('active'));
+      member.classList.add('active');
     });
   });
 
-  councilMembers.forEach(member => {
-    const infoBox = member.querySelector('.info-box');
-    const rect = member.getBoundingClientRect();
-    const tableRect = document.querySelector('.table-surface').getBoundingClientRect();
-    member.addEventListener('mouseenter', () => {
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.council-member')) {
       councilMembers.forEach(m => m.classList.remove('active'));
-      member.classList.add('active');
-      infoBox.style.top = `${tableRect.top - rect.top + 20}px`; // 20px offset from table top.. maybe...
-    });
-});
+    }
+  });
 </script>
 </body>
 </html>

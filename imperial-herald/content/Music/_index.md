@@ -4,6 +4,8 @@ draft = false
 
 # Имперская библиотека музыки! 
 
+---
+
 ### Альбом Imperial Dispath
 
 {{< music
@@ -29,4 +31,15 @@ draft = false
     name="The Enchanted Hourglass"
     authors="AmoBoro"
     link="imperial-dispatch_album/The-Enchanted-Hourglass.mp3"
+>}}
+
+---
+
+
+# Музыка Веранского производства!
+
+{{< music
+    name="Гимн Вераны"
+    authors="Династия Кейн, Verana's automated soundplayer"
+    link="verana-music/Verana's-anthem.mp3"
 >}}
