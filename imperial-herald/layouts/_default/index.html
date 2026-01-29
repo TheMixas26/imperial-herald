@@ -301,7 +301,7 @@
         <section class="note">
             <b>Расскажите об Имперской Гвардии!</b><br>
             Мы только с радостью! Тут и про саму гвардию, и про все её невероятные флотилии!<br>
-            <a href="/ImpG/"><i>Заинтересоваться...</i></a>
+            <a href="/impg/"><i>Заинтересоваться...</i></a>
         </section>
 
         <!-- <section class="note">
@@ -339,7 +339,7 @@
         </section>
 
         <section class="note">
-            <b>Военные сводки</b>
+            <b>Военные сводки</b><br>
             Официальные и достоверные новости с фронтов и приграничных территорий.
             Раузмеется, мы <i>не</i> разглошаем секретную информацию, 
             но это не значит, что сводки не интересны!
@@ -399,10 +399,11 @@
 
     </main>
     <script>
-    
+    document.querySelectorAll('.note').forEach((el, i) => {
+        setTimeout(() => el.classList.add('show'), 100 + i * 120);
+    });
     // ЗАБАВНО, но если поменять порядок скриптов, то анимация становится интересной! XD
     // Узнать у Андрюши что он думает по этому поводу :D
-
     const notesContainer = document.querySelector('.notes');
     const notes = Array.from(notesContainer.children);
 
@@ -413,11 +414,7 @@
         }
     }
     shuffle(notes);
-    notes.forEach(note => notesContainer.appendChild(note));
-
-    document.querySelectorAll('.note').forEach((el, i) => {
-        setTimeout(() => el.classList.add('show'), 100 + i * 120);
-    });
+    notes.forEach(note => notesContainer.appendChild(note));    
 </script>
 </body>
 </html>
