@@ -9,10 +9,27 @@
     :root {
       --imperial-purple: #6a2ca0;
       --imperial-purple-dark: #4a1f73;
+      --imperial-special-purple: #a63ac7;
       --imperial-bg: #0e0b14;
       --imperial-text: #e6e1f0;
       --imperial-muted: #b8a9d9;
       --imperial-gold: #d6b36a;
+    }
+
+    .body-imperial-awards-2025 .breadcrumbs{
+      display: none;
+    }
+
+    .post-single .post-content .main {
+      margin-top: 0px;
+    }
+
+    .container .h1 {
+      margin-top: 0;
+    }
+
+    .post-single .post-header {
+      display: none;
     }
 
     * {
@@ -33,14 +50,17 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 48px 20px 64px;
+      padding: 0px 20px 64px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 48px;
+    }
+
+    .special {
+      color: var(--imperial-special-purple);
     }
 
     header h1 {
@@ -100,22 +120,92 @@
     a:hover {
       text-decoration: underline;
     }
+:root {
+        --index: 20px;
+        --bg-main: #0a0a14;
+        --bg-note: #211429;
+        --text-main: #e7e7e7;
+        --note-shadow: rgba(0,0,0,0.7) 5px 5px 20px 0px;
+        color: var(--text-main);
+    }
+    header, head {
+        color: var(--text-main);
+    }
+    body {
+        background: var(--bg-main) !important;
+        color: var(--text-main);
+
+    .header, .nav {
+        background: #18191c;
+        color: var(--text-main);
+        /* box-shadow: 0 2px 16px #0008; */
+    }
+
+    .logo a, .logo {
+        color: #e7e7e7 !important;
+        text-decoration: none;
+    }
+
+    #menu li a, #menu li span {
+        color: #e7e7e7 !important;
+        background: none;
+        transition: color 0.2s;
+    }
+
+    #menu li a:hover, #menu li span.active {
+        color: #8ecfff !important;
+    }
+
+    .logo-switches button {
+        background: none;
+        border: none;
+        color: #e7e7e7;
+        cursor: pointer;
+    }
+
+    .logo-switches svg {
+        stroke: #e7e7e7;
+        fill: none;
+        transition: stroke 0.2s;
+    }
+
+    .logo-switches button:hover svg {
+        stroke: #8ecfff;
+    }
+
+    @media (max-width: 600px) {
+        .notes {
+            margin: 0;
+            padding: var(--index);
+            column-width: 100%;
+            min-width: 0;
+        }
+        .note {
+            font-size: 1rem;
+            padding: var(--index);
+            margin-bottom: var(--index);
+            border-radius: 10px;
+            max-width: 100vw;
+            box-sizing: border-box;
+            text-align: left;
+        }
+    }
+  }
   </style>
 </head>
-<body>
+<body class="body-imperial-awards-2025">
   <div class="container">
     <header>
       <h1>IMPERIAL AWARDS 2025</h1>
       <p>
-        Администрация Имперского Вестника завершила тотальный анализ активности
-        граждан Империи за прошедший год.
+        Администрация Имперского Вестника завершила тотальный анализ активности активных граждан Империи за прошедший год.
       </p>
     </header>
 
     <section class="award">
       <h2>Самый преданный подписчик</h2>
       <p>
-        <span class="winner"><a class=winner href="https://t.me/ahdpeee">@ahdpeee</a></span> — больше всего комментариев,
+        <a class=winner href="https://t.me/ahdpeee">@ahdpeee</a> — больше всего комментариев,
         больше всего реакций, больше всего постов в предложку.
         Единственный подписчик, который пришёл на стрим буквально и проводил
         стримера прямо до дома.  
@@ -127,51 +217,57 @@
     <section class="award">
       <h2>Самый преданный комментатор</h2>
       <p>
-        Мы не смогли определиться, поэтому в номинации побеждают сразу два
-        человека:  
+        Сколько постов минуло, сколько инфоповодов проскользило, сколько мемов появилось... И под каждым постом нас встречал её тёплый и душевный комментарий. Встречайте победителя — <a href="https://t.me/ViagriK_hahahaha" class="winner">@ViagriK_hahahaha</a>!
         <br />
-        <span class="winner">@ViagriK_hahahaha</span>
+        Бесконечный почёт вам, <span class="winner">смайлик розы</span>.
       </p>
     </section>
 
     <section class="award">
       <h2>Самый старый подписчик, который до сих пор с нами</h2>
       <p>
-        Он пережил редизайны, кризисы и обновления. Он застал все обновления
-        Предложки.  
+        Она пережила редизайны, кризисы и обновления. Она никогда не покидала канал. Она застала все обновления Предложки, она даже была, когда Предложки не было... Встречайте, легендарный подписчик — <a href="https://t.me/Tea_liu/" class="winner">@Tea_liu</a>
         <br /><br />
-        Встречайте потребителя —
-        <span class="winner">@Tea_liu</span>!!!!
+        Мы ваши фанаты, 
+        <span class="winner">миссис Щербет</span>!!!!
       </p>
     </section>
 
     <section class="award">
       <h2>Под его постом больше всего комментариев</h2>
       <p>
-        Империя помнит. Империя видит. Империя считает.
+        Очень много постов прошло, очень много инфоповодов проскользило, очень много мемов появилось... Но какой пост стал самым комментируемым?<br><br>
+        Проведя тщательный анализ, мы пришли к выводу, что в номинации "Под его постом больше всего комментариев" побеждает <a href="https://t.me/deadsatanist" class="winner">@deadsatanist</a>! <br><br>
+        Спасибо тебе, <span class="winner">Дуэлянт</span>, твои посты всегда вызывают бурю эмоций и обсуждений!
       </p>
     </section>
 
     <section class="award">
-      <h2>Самый регулярный пользователь предложки</h2>
+      <h2>Самый регулярный пользователь Предложки</h2>
       <p>
-        Место I  
-        <br />
-        Место II
+        К нашему несчастью, мы не добавляли в Предложку статистику или подсчёт отправленных постов, а потому, нам пришлось анализировать всё вручную. И по нашим личным итогам, мы поняли, что победителей в данной номинации будет не иначе, как два.<br>И таааааак, встречайтеее, герои Предложки:
+        <br><br>
+        <span class="special">Место I</span> — <a href="https://t.me/ahdpeee" class="winner">@ahdpeee</a>! <i>Да, он и тут победил..</i> 
+        <br><br>
+        А также, великая и неповторимая, занявшая <span class="special">Место II</span> — <a href="https://t.me/deadsatanist" class="winner">@deadsatanist</a>!
+        <br><br>
+        Спасибо вам, <span class="winner">наши преданные фанаты</span>.
       </p>
     </section>
 
     <section class="award">
       <h2>Верный в тени</h2>
       <p>
-        <span class="winner">@Egorbalbes65</span>
+        Быть преданным — это не всегда быть самым заметным. Быть преданным — это не всегда быть самым активным. Быть преданным — это не всегда быть самым громким. Быть преданным — это не всегда быть самым ярким. Быть преданным — это не всегда быть самым заметным. Быть преданным — это не всегда быть самым активным. Быть преданным — это не всегда быть самым громким. Быть преданным — это не всегда быть самым ярким.<br><br>
+        Но всё же, мы хотим отметить одного из таких верных в тени подписчиков, который, несмотря на свою скромность и тихую работу в тени, продолжает поддерживать Империю своим присутствием и участием. Встречайте нашего "Верного в тени" — <a href="https://t.me/Egorbalbes65" class="winner">@Egorbalbes65</a>! <i>Да, он тоже участвовал во многих номинациях, но он заслуживает отдельного признания за свою тихую преданность.</i><br><br>
+         Спасибо тебе, <span class="winner">Егор</span>, твоя тихая поддержка незаменима.
       </p>
     </section>
 
     <section class="award">
       <h2>Мем года</h2>
       <p>
-        Мемы приходят и уходят. Легенды — остаются.
+        Мемы приходят и уходят. Легенды — остаются. <br><br>Именно поэтому, Администрация решила: мемы года должно выбрать сообщество. Присылайте свои любимые мемы в комментариях, которые засветились в Имперском Вестнике за 2025 год. Пусть каждый сам решает, каким для него был "Мем года 2025".
       </p>
     </section>
 
@@ -180,8 +276,11 @@
       зарекомендовать.  
       <br /><br />
       Встречайте: тотальный новичок, который хотел выиграть сразу несколько
-      номинаций, но пока ещё не успел —
-      <span class="winner">@aliskabeztg</span>
+      номинаций, но пока ещё не успел — <span class="winner">@aliskabeztg</span>
+      <br><br>
+      Подписчик, который наверняка победил бы в номинации "Самый слейный подписчик", если бы такая номинация существовала. Встречайте — <span class="winner">@Hllls1</span>
+      <br><br>
+      Также, в ряды подписчиков сразу по нескольким номинациям стремился попасть наш великий и ужасный <span class="winner">@UK_Ataman</span>, но он не знал, что админы в премии не участвуют)
     </div>
   </div>
 </body>
