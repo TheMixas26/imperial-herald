@@ -26,12 +26,12 @@ layout = "single"
 
 ### Засекреченные материалы
 
-📄 [Project "Find the Abyss"](project-Find-the-Abyss)
+📄 [Project "Find the Abyss"](project-find-the-abyss)
 
-📄 [Project "Prаcsise"](project-Pracsise)
+📄 [Project "Prаcsise"](project-pracsise)
 
-📄 [Project "ObsDis"](Observers-disease)
+📄 [Project "ObsDis"](observers-disease)
 
-📄 [Project "Core"](Project-Core)
+📄 [Project "Core"](project-core)
 
-📄 [Project "Nexus"](Project-Nexus)
+📄 [Project "Nexus"](project-nexus)

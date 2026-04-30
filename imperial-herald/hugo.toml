@@ -42,9 +42,9 @@ weight = 4
 
 
 [outputs]
-home = [ "HTML", "RSS" ]
-section = [ "HTML", "RSS" ]
-taxonomy = [ "HTML", "RSS" ]
+home = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
 
 [markup]
   [markup.goldmark]

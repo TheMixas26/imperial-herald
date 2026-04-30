@@ -25,12 +25,20 @@ sssss
     "orientation": "down",
     "startx": 4,
     "starty": 1
+  },
+  {
+    "clue": "Основа воздушного флота Империи",
+    "answer": "ДИРИЖАБЛЬ",
+    "position": 3,
+    "orientation": "across",
+    "startx": 4,
+    "starty": 3
   }
 ]
 {{< /crossword >}}
 
 
-<iframe frameborder="0" allow="clipboard-write" style="border:none;width:614px;height:556px;" width="614" height="556"></iframe>
+<iframe frameborder="0" allow="clipboard-write" style="border:none;width:814px;height:856px;" width="814" height="856"></iframe>
 
 
 о как
