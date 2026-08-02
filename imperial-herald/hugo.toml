@@ -35,9 +35,9 @@ url = "/projects/"
 weight = 2
 
 [[menu.main]]
-identifier = "archives"
+identifier = "imperial-archives"
 name = "Архивы"
-url = "/archives/"
+url = "/imperial-archives/"
 weight = 4
 
 

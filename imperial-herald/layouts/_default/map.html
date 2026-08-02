@@ -65,19 +65,20 @@
   var imperialImage = L.imageOverlay('/images/map.svg', bounds).addTo(imperialLayer);
   
   L.marker([510, 190], {icon: imperialIcon}).addTo(imperialLayer)
-    .bindPopup('<b>Дерака</b><br>Столица Империи.');
+    .bindPopup('<a href="deraka"<b>Дерака</b></a><br>Столица Империи.');
   L.marker([700, 260], {icon: imperialIcon}).addTo(imperialLayer)
-    .bindPopup('<b>Аркана</b><br>Технологический центр.');
+    .bindPopup('<a href="arkana"><b>Аркана</b></a><br>Технологический центр.');
   L.marker([370, 340], {icon: imperialIcon}).addTo(imperialLayer)
-    .bindPopup('<b>Агдель</b><br>Портовый город.');
+    .bindPopup('<a href="agdel"><b>Агдель</b></a><br>Портовый город.');
   L.marker([680, 760], {icon: imperialIcon}).addTo(imperialLayer)
-    .bindPopup('<b>Кронхейм</b><br>Военный город.');
+    .bindPopup('<a href="cronheim"<b>Кронхейм</b></a><br>Военный город.');
 
 
 
   var ShuggotLayer = L.layerGroup();
   L.imageOverlay('/images/map-2.svg', bounds).addTo(ShuggotLayer);
   // Метки для Шуггота...
+  // TODO: карты для Шуггота и для Вераны
 
   var VeranaLayer = L.layerGroup();
   L.imageOverlay('/images/map-3.svg', bounds).addTo(VeranaLayer);
