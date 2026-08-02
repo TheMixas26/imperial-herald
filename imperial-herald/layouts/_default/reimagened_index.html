@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru" dir="auto">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s — %s" .Title site.Title }}{{ end }}</title>
+
+<style>
+/* === Базовые переменные темы PaperMod (без изменений) === */
+:root{--gap:24px;--content-gap:20px;--nav-width:1024px;--main-width:720px;--header-height:60px;--footer-height:60px;--radius:8px;--theme:rgb(255, 255, 255);--entry:rgb(255, 255, 255);--primary:rgb(30, 30, 30);--secondary:rgb(108, 108, 108);--tertiary:rgb(214, 214, 214);--content:rgb(31, 31, 31);--code-block-bg:rgb(28, 29, 33);--code-bg:rgb(245, 245, 245);--border:rgb(238, 238, 238);color-scheme:light}
+:root[data-theme=dark]{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}
+.list{background:var(--code-bg)}
+[data-theme=dark] .list{background:var(--theme)}
+*,::after,::before{box-sizing:border-box}
+html{-webkit-tap-highlight-color:transparent;overflow-y:scroll;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a,button,body,h1,h2,h3,h4,h5,h6{color:var(--primary)}
+body{font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;font-size:18px;line-height:1.6;word-break:break-word;background:var(--theme)}
+article,aside,figcaption,figure,footer,header,hgroup,main,nav,section,table{display:block}
+h1,h2,h3,h4,h5,h6{line-height:1.2}
+h1,h2,h3,h4,h5,h6,p{margin-top:0;margin-bottom:0}
+ul{padding:0}
+a{text-decoration:none}
+body,figure,ul{margin:0}
+button#theme-toggle{font-size:26px;margin:auto 4px}
+[data-theme=dark] #moon{display:none}
+[data-theme=light] #sun{display:none}
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;max-width:calc(var(--nav-width) + var(--gap) * 2);margin-inline-start:auto;margin-inline-end:auto;line-height:var(--header-height)}
+.nav a{display:block}
+.logo,#menu{display:flex;margin:auto var(--gap)}
+.logo{flex-wrap:inherit}
+.logo a{font-size:24px;font-weight:700}
+.logo a img,.logo a svg{display:inline;vertical-align:middle;pointer-events:none;transform:translate(0,-10%);border-radius:6px;margin-inline-end:8px}
+#menu{list-style:none;word-break:keep-all;overflow-x:auto;white-space:nowrap}
+#menu li+li{margin-inline-start:var(--gap)}
+#menu a{font-size:16px}
+#menu .active{font-weight:500;border-bottom:2px solid}
+.lang-switch li,.lang-switch ul,.logo-switches{display:inline-flex;margin:auto 4px}
+.lang-switch{display:flex;flex-wrap:inherit}
+.lang-switch a{margin:auto 3px;font-size:16px;font-weight:500}
+.logo-switches{flex-wrap:inherit;align-items:center}
+.legacy-link{font-size:16px !important;margin:auto 20px;padding:0px 10px 0px 10px;border-radius:var(--radius);border:1px solid var(--tertiary);color:var(--secondary)!important;transition:color .2s,border-color .2s}
+.legacy-link:hover{color:var(--primary)!important;border-color:var(--secondary)}
+.header,.nav{background:var(--theme)}
+</style>
+
+<style>
+/* === Доска заметок: тема наследуется от переменных выше, переключатель работает === */
+:root{
+  --index: 20px;
+  --board-bg: var(--code-bg);
+  --note-bg: var(--entry);
+  --note-text: var(--content);
+  --note-shadow: rgba(30,30,30,0.12) 5px 5px 20px 0px;
+  --note-link: #2f6fb0;
+}
+:root[data-theme=dark]{
+  --board-bg: #0a0a14;
+  --note-bg: #211429;
+  --note-text: #e7e7e7;
+  --note-shadow: rgba(0,0,0,0.7) 5px 5px 20px 0px;
+  --note-link: #8ecfff;
+}
+
+body{background:var(--board-bg)}
+
+.intro{
+  max-width:calc(var(--nav-width) + var(--gap) * 2);
+  margin:0 auto;
+  padding:calc(var(--index)*2) var(--index) 0;
+  text-align:center;
+  color:var(--note-text);
+}
+.intro h1{font-size:1.4em;margin-bottom:.4em}
+
+.board{
+  max-width:calc(var(--nav-width) + var(--gap) * 2);
+  margin:0 auto;
+  padding:calc(var(--index)*2) var(--index);
+  column-width:calc(var(--index)*15);
+  column-gap:var(--index);
+}
+.board-fixed{padding-top:var(--index)}
+
+.note{
+  will-change:transform,opacity;
+  font-size:var(--index);
+  text-align:center;
+  max-width:100%;
+  margin-bottom:calc(var(--index)*2);
+  background-color:var(--note-bg);
+  border-radius:calc(var(--index)*0.5);
+  box-shadow:var(--note-shadow);
+  padding:calc(var(--index)*1.5) var(--index);
+  color:var(--note-text);
+  display:inline-block;
+  width:100%;
+  transform:perspective(800px) translateY(60px) rotateX(-40deg) translateZ(-80px);
+  opacity:0;
+  transition:transform .6s ease,opacity .6s ease;
+}
+.note.show{transform:perspective(800px) translateY(0) rotateX(0deg);opacity:1}
+.note h2{font-size:1em;margin-bottom:.5em}
+.note p{margin-bottom:.5em;font-size:.75em;line-height:1.5}
+.note a{display:inline-block;color:var(--note-link)}
+.note .external-links a{display:block;margin:.3em 0}
+
+@media (max-width:600px){
+  .board{margin:0;padding:var(--index);column-width:100%}
+  .note{font-size:1rem;padding:var(--index);margin-bottom:var(--index);border-radius:10px;text-align:left}
+}
+@media (prefers-reduced-motion){
+  .note{transition:none;transform:none;opacity:1}
+}
+
+</style>
+</head>
+
+<script>
+// Единая инициализация темы (без дублей). Реальное переключение по клику
+// на #theme-toggle обрабатывается основным скриптом темы PaperMod, который
+// выставляет data-theme на <html> — здесь мы только применяем сохранённый
+// выбор при первой отрисовке, чтобы не было "мигания" темы.
+(function () {
+  var saved = localStorage.getItem("pref-theme");
+  var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var isDark = saved ? saved === "dark" : prefersDark;
+  document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+})();
+</script>
+
+<body>
+<header class="header">
+<nav class="nav">
+<div class="logo">
+{{- $label_text := (site.Params.label.text | default site.Title) }}
+{{- if site.Title }}
+<a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+{{- $label_text -}}
+</a>
+{{- end }}
+<div class="logo-switches">
+{{- if (not site.Params.disableThemeToggle) }}
+<button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Переключить тему">
+<svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+<svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+</button>
+{{- end }}
+
+{{- with site.Params.legacyURL }}
+<a class="legacy-link" href="{{ . }}" target="_blank" rel="noopener" title="Открыть старую версию сайта">Legacy</a>
+{{- end }}
+
+{{- $lang := .Lang}}
+{{- with site.Home.Translations }}
+<ul class="lang-switch">
+{{- range . -}}
+{{- if ne $lang .Lang }}
+<li><a href="{{- .Permalink -}}">{{- .Lang | title -}}</a></li>
+{{- end -}}
+{{- end}}
+</ul>
+{{- end }}
+</div>
+</div>
+
+{{- $currentPage := . }}
+<ul id="menu">
+{{- range site.Menus.main }}
+{{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+{{- $page_url:= $currentPage.Permalink | absLangURL }}
+<li>
+<a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+<span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>{{- .Pre }}{{ .Name -}}{{ .Post -}}</span>
+</a>
+</li>
+{{- end }}
+</ul>
+</nav>
+</header>
+
+<main>
+
+{{ with .Params.intro }}
+<section class="intro">
+  <h1>{{ .title }}</h1>
+  {{ .body | markdownify }}
+</section>
+{{ end }}
+
+{{/* Основная навигация: порядок фиксирован, без перемешивания — это точки входа в лор */}}
+<nav class="board board-fixed" aria-label="Основная навигация">
+{{ range where .Params.cards "pinned" true }}
+  {{ $card := . }}
+  <article class="note note-pinned">
+    <h2>{{ $card.title }}</h2>
+    <div>{{ $card.body | markdownify }}</div>
+    {{ with $card.link }}<a href="{{ . }}">{{ $card.linkText }}</a>{{ end }}
+    {{ if $card.links }}
+    <div class="external-links">
+      {{ range $card.links }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .text }}</a>{{ end }}
+    </div>
+    {{ end }}
+  </article>
+{{ end }}
+</nav>
+
+{{/* Второстепенные/шуточные карточки: тут перемешивание уместно и безопасно */}}
+<section class="board board-shuffle" aria-label="Разное">
+{{ range where .Params.cards "pinned" false }}
+  <article class="note">
+    <h2>{{ .title }}</h2>
+    <div>{{ .body | markdownify }}</div>
+  </article>
+{{ end }}
+</section>
+
+</main>
+
+<script>
+// Появление карточек — сначала перемешиваем "второстепенную" доску (если она есть),
+// и только потом навешиваем задержки анимации, чтобы порядок показа совпадал
+// с итоговым визуальным порядком.
+(function () {
+  var shuffleBoard = document.querySelector(".board-shuffle");
+  if (shuffleBoard) {
+    var items = Array.from(shuffleBoard.children);
+    for (var i = items.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      shuffleBoard.appendChild(items[j]);
+      items.splice(j, 1);
+    }
+  }
+
+  document.querySelectorAll(".note").forEach(function (el, i) {
+    setTimeout(function () { el.classList.add("show"); }, 100 + i * 120);
+  });
+})();
+</script>
+
+</body>
+</html>

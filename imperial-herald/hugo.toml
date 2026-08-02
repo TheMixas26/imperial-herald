@@ -15,6 +15,7 @@ theme = "PaperMod"
   hideFooter = false
   ShowRecentPosts = false
   EmergencyNotice = "ВНИМАНИЕ! Тестируется бегущая полоса! Это важная часть будущего Имеприи!"
+  legacyURL = "old_index"   # link from reimagened to old 
 
 [[menu.main]]
 identifier = "vypuski"
@@ -50,3 +51,6 @@ taxonomy = ["HTML"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[security]
+  allowContent = ['.*']
